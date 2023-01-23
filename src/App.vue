@@ -1,26 +1,58 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TheHeader/>
+  <BannerLayout/>
+  <div class="container">
+    <AboutLayout/>  
+    <ServicesLayout/>  
+  </div>
+  <TheFooter/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import TheHeader from './components/TheHeader.vue';
+import TheFooter from './components/TheFooter.vue';
+import BannerLayout from './components/BannerLayout.vue';
+import AboutLayout from './components/AboutLayout.vue';
+import ServicesLayout from './components/ServicesLayout.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheHeader,
+    TheFooter,
+    BannerLayout,
+    AboutLayout,
+    ServicesLayout
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 5em auto 2em;
+  max-width: 1220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
 }
 </style>

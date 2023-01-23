@@ -6,13 +6,13 @@
     </div>
     <ul>
       <li>
-        <p class="links">Home</p>
+        <a href="#banner" class="links" v-smooth-scroll="{ duration: 1000, offset: -50 }">Home</a>
       </li>
       <li>
-        <p class="links">About</p>
+        <a href="#about" class="links" v-smooth-scroll="{ duration: 1000, offset: -150 }">About</a>
       </li>
       <li>
-        <p class="links">Services</p>
+        <a href="#services" class="links" v-smooth-scroll="{ duration: 1000, offset: -100 }">Services</a>
       </li>
     </ul>
   </nav>
@@ -21,6 +21,7 @@
 <script>
 
 export default {
+ 
 }
 
 </script>
@@ -33,6 +34,9 @@ nav {
   display: flex;
   align-items: center;
   padding: 1.2em 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 ul {
@@ -51,6 +55,8 @@ li {
   padding: 10px;
   border-radius: 5px;
   transition: .5s;
+  text-decoration: none;
+  color: #fff;
 }
 
 .links:hover {

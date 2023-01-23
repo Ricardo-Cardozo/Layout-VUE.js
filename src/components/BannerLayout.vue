@@ -1,12 +1,12 @@
 <template>
-  <div class="banner-container">
-    <img class="vue-banner" src="../../public/vuejs.svg" alt="" srcset="">
-    <h1>Bem vindo!</h1>
-    <h3>Este site está sendo desenvolvido com <span>Vue.js</span> para fins educacionais</h3>
+  <div id="banner" class="banner-container">
+    <img id="home" class="vue-banner" src="../../public/vuejs.svg" alt="" srcset="">
+    <h1>Welcome!</h1>
+    <h3>This site was developed with <span>Vue.js</span></h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aut eligendi officiis deserunt voluptatibus,
       molestias deleniti quaerat, accusantium asperiores doloribus aspernatur, velit voluptate dolorum eos veritatis
       beatae labore alias facilis.</p>
-    <button class="btn">Saiba mais</button>
+    <button class="btn">Know more</button>
   </div>
 </template>
 

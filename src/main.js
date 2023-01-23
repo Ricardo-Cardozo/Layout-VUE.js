@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import VueSmoothScroll from 'v-smooth-scroll'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(VueSmoothScroll)
+app.mount('#app')

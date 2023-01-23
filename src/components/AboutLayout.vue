@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div id="about">
     <h1 class="about-title">About</h1>
     <div class="about-container">
       <img class="icon-pc" src="../../public/pc.svg" alt="" srcset="">

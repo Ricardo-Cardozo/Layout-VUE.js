@@ -7,23 +7,24 @@
   </div>
   <TheFooter/>
 </template>
-
 <script>
 
-import TheHeader from './components/TheHeader.vue';
-import TheFooter from './components/TheFooter.vue';
-import BannerLayout from './components/BannerLayout.vue';
-import AboutLayout from './components/AboutLayout.vue';
-import ServicesLayout from './components/ServicesLayout.vue';
+
+
+import BannerLayout from '@/components/BannerLayout.vue';
+import AboutLayout from '@/components/AboutLayout.vue';
+import ServicesLayout from '@/components/ServicesLayout.vue';
+import TheFooter from '@/components/TheFooter.vue';
+import TheHeader from '@/components/TheHeader.vue';
 
 export default {
   name: 'App',
   components: {
-    TheHeader,
-    TheFooter,
     BannerLayout,
     AboutLayout,
-    ServicesLayout
+    ServicesLayout,
+    TheFooter,
+    TheHeader
   }
 }
 </script>
